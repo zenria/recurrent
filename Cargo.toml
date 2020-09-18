@@ -1,0 +1,13 @@
+[package]
+name = "recurrent"
+version = "0.1.0"
+authors = ["Philippe GASSMANN <philoops@gmail.com>"]
+edition = "2018"
+keywords = ["calendar", "event", "alarm", "clock"]
+description = "Track recurrent events on a calendar."
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono="0.4"
+cron="0.6"
+thiserror="1"
