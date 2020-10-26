@@ -9,7 +9,7 @@ mod conv;
 
 /// Internal Weekday representation ordered by day in week.
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Ord, PartialOrd)]
-enum OrderedWeekday {
+pub enum OrderedWeekday {
     /// Monday.
     Mon = 0,
     /// Tuesday.
