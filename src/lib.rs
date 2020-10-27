@@ -62,6 +62,8 @@ fn apply_time<T: TimeZone>(date_time: &DateTime<T>, time: &NaiveTime) -> DateTim
         .unwrap()
         .with_second(time.second())
         .unwrap()
+        .with_nanosecond(0)
+        .unwrap()
 }
 
 pub trait Weekdays {
