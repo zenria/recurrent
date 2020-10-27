@@ -60,3 +60,9 @@ impl From<Weekday> for OrderedWeekday {
         }
     }
 }
+
+impl Weekdays for &[Weekday] {
+    fn week_days(&self) -> Vec<Weekday> {
+        self.iter().map(|w| w.clone()).collect()
+    }
+}
